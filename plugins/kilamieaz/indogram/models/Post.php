@@ -86,12 +86,18 @@ class Post extends Model
             'order' => 'name'
         ]
     ];
-    public $belongsToMany = [];
+    public $belongsToMany = [
+        'captions' => [
+            'Kilamieaz\Indogram\Models\Caption',
+            'table' => 'kilamieaz_indogram_captions_posts',
+            'order' => 'name'
+        ],
+    ];
     public $morphTo = [];
     public $morphOne = [];
     public $morphMany = [];
     public $attachOne = [
-        'photo' => 'System\Models\File'
+        'image' => 'System\Models\File'
     ];
     public $attachMany = [];
 }

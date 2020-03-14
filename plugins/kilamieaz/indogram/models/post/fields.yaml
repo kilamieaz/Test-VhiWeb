@@ -13,3 +13,22 @@ fields:
     user_id:
         label: User
         type: dropdown
+    image:
+        label: 'Image'
+        span: auto
+        oc.commentPosition: ''
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '100'
+        imageHeight: '100'
+        type: fileupload
+    captions:
+        label: Caption
+        span: auto
+        oc.commentPosition: ''
+        nameFrom: name
+        # descriptionFrom: description
+        type: relation

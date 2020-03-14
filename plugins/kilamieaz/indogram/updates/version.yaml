@@ -5,4 +5,8 @@
 1.0.3:
     - 'Created table kilamieaz_indogram_captions'
     - create_captions_table.php
+1.0.4:
+    - 'Created table kilamieaz_indogram_captions_posts'
+    - create_captions_posts_table.php
+
     
