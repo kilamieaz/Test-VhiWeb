@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Post
+
+# Model Form Field configuration
+form: $/kilamieaz/indogram/models/post/fields.yaml
+
+# Model Class name
+modelClass: Kilamieaz\Indogram\Models\Post
+
+# Default redirect location
+defaultRedirect: kilamieaz/indogram/posts
+
+# Create page
+create:
+    title: Create Post
+    redirect: kilamieaz/indogram/posts/update/:id
+    redirectClose: kilamieaz/indogram/posts
+
+# Update page
+update:
+    title: Edit Post
+    redirect: kilamieaz/indogram/posts
+    redirectClose: kilamieaz/indogram/posts
+
+# Preview page
+preview:
+    title: Preview Post

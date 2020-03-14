@@ -1,0 +1,4 @@
+1.0.1: First version of indogram
+1.0.2:
+    - 'Created table kilamieaz_indogram_posts'
+    - create_posts_table.php

@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+    description:
+        label: Description
+        type: text
+        required: true
+    user_id:
+        label: User
+        type: dropdown

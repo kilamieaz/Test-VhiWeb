@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Default Application Environment
@@ -13,7 +12,7 @@ return [
     |
     */
 
-    'default' => 'production',
+    'default' => env('APP_ENV', 'production'),
 
     /*
     |--------------------------------------------------------------------------
@@ -27,9 +26,6 @@ return [
     */
 
     'hosts' => [
-
         'localhost' => 'dev',
-
     ],
-
 ];
