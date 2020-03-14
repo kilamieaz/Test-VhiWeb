@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Caption
+
+# Model Form Field configuration
+form: $/kilamieaz/indogram/models/caption/fields.yaml
+
+# Model Class name
+modelClass: Kilamieaz\Indogram\Models\Caption
+
+# Default redirect location
+defaultRedirect: kilamieaz/indogram/captions
+
+# Create page
+create:
+    title: Create Caption
+    redirect: kilamieaz/indogram/captions/update/:id
+    redirectClose: kilamieaz/indogram/captions
+
+# Update page
+update:
+    title: Edit Caption
+    redirect: kilamieaz/indogram/captions
+    redirectClose: kilamieaz/indogram/captions
+
+# Preview page
+preview:
+    title: Preview Caption

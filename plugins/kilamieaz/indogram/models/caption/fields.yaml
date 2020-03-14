@@ -1,0 +1,21 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+    name:
+        label: Name
+        oc.commentPosition: ''
+        span: left
+        type: text
+    slug:
+        label: Slug
+        span: right
+        oc.commentPosition: ''
+        preset:
+            field: name
+            type: slug
+        type: text

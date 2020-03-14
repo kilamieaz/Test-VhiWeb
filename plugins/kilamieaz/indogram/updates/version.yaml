@@ -2,3 +2,7 @@
 1.0.2:
     - 'Created table kilamieaz_indogram_posts'
     - create_posts_table.php
+1.0.3:
+    - 'Created table kilamieaz_indogram_captions'
+    - create_captions_table.php
+    
