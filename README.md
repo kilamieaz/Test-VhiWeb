@@ -1,9 +1,6 @@
-# OctoberCMS Boilerplate
-*by Octobro*
+# Indogram
 
 ---
-
-[OctoberCMS](http://octobercms.com) is a powerful CMS based on [Laravel PHP Framework](http://laravel.com).
 
 ## Prerequisites
 
@@ -17,22 +14,16 @@
 1. Clone to your base project directory.
 
 	```
-	git clone https://github.com/octobroid/oc-boilerplate.git <project-name>
+	git clone https://github.com/kilamieaz/Test-VhiWeb.git <project-name>
 	```
 
-2. Don't forget to remove `.git` folder, create your own repository.
-
-	```
-	rm -rf !$/.git
-	```
-
-3. Install composer dependencies.
+2. Install composer dependencies.
 
 	```
 	composer install
 	```
 
-4. Create configuration file `.env` (copy from `.env.example`) and set the database configuration.
+3. Create configuration file `.env` (copy from `.env.example`) and set the database configuration.
 
 	```
 	DB_HOST=localhost
@@ -41,24 +32,26 @@
 	DB_PASSWORD=<database-password>
 	```
 
-5. Migrate October database.
+4. Migrate October database.
 
 	```
 	php artisan october:up
 	```
 
-6. Install frontend library using Yarn. Go to theme directory first.
+5. Install frontend library using Yarn. Go to theme directory first.
 
     ```
     cd themes/my-theme
 	yarn install
 	```
 
-7. For security reason, please generate new application key.
+6. For security reason, please generate new application key.
 
 	```
 	php artisan key:generate
 	```
+	
+7. Register and login
 
 ## Plugins
 
