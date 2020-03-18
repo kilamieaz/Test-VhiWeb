@@ -6,8 +6,22 @@ columns:
     id:
         label: ID
         searchable: true
-    caption:
-        label: Caption
+    description:
+        label: Description
+        type: text
+        searchable: true
+        sortable: true
+    slug:
+        label: Slug
+        type: text
+        searchable: true
+        sortable: true
+    tags:
+        label: Tags
+        type: text
+        searchable: true
+        select: name
+        relation: tags
     user:
         label: User
         relation: user

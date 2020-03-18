@@ -3,6 +3,7 @@
 namespace Kilamieaz\Indogram\Models;
 
 use Model;
+use Illuminate\Support\Str;
 
 /**
  * Post Model
@@ -36,6 +37,19 @@ class Post extends Model
         });
 
         return $usersOptions;
+    }
+
+    /**
+     * Generate a URL slug for this model
+     */
+    public function beforeCreate()
+    {
+        $this->slug = Str::slug($this->description);
+    }
+
+    public function getDateFormatAttribute()
+    {
+        return $this->created_at->diffForHumans();
     }
 
     /**
@@ -87,9 +101,9 @@ class Post extends Model
         ]
     ];
     public $belongsToMany = [
-        'captions' => [
-            'Kilamieaz\Indogram\Models\Caption',
-            'table' => 'kilamieaz_indogram_captions_posts',
+        'tags' => [
+            'Kilamieaz\Indogram\Models\Tag',
+            'table' => 'kilamieaz_indogram_tags_posts',
             'order' => 'name'
         ],
     ];

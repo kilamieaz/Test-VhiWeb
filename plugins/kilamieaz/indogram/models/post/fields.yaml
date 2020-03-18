@@ -8,8 +8,16 @@ fields:
         disabled: true
     description:
         label: Description
+        span: left
         type: text
         required: true
+    slug:
+        label: Slug
+        span: right
+        preset:
+            field: description
+            type: slug
+        type: text
     user_id:
         label: User
         type: dropdown
@@ -25,8 +33,8 @@ fields:
         imageWidth: '100'
         imageHeight: '100'
         type: fileupload
-    captions:
-        label: Caption
+    tags:
+        label: Tags
         span: auto
         oc.commentPosition: ''
         nameFrom: name
