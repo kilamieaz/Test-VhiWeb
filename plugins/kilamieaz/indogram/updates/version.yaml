@@ -3,10 +3,13 @@
     - 'Created table kilamieaz_indogram_posts'
     - create_posts_table.php
 1.0.3:
-    - 'Created table kilamieaz_indogram_captions'
-    - create_captions_table.php
+    - 'Created table kilamieaz_indogram_tags'
+    - create_tags_table.php
 1.0.4:
-    - 'Created table kilamieaz_indogram_captions_posts'
-    - create_captions_posts_table.php
+    - 'Created table kilamieaz_indogram_tags_posts'
+    - create_tags_posts_table.php
+1.0.5:
+    - 'Seed'
+    - all_seeder.php
 
     

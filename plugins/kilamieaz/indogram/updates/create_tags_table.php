@@ -6,11 +6,11 @@ use Schema;
 use October\Rain\Database\Schema\Blueprint;
 use October\Rain\Database\Updates\Migration;
 
-class CreateCaptionsTable extends Migration
+class CreateTagsTable extends Migration
 {
     public function up()
     {
-        Schema::create('kilamieaz_indogram_captions', function (Blueprint $table) {
+        Schema::create('kilamieaz_indogram_tags', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name');
@@ -21,6 +21,6 @@ class CreateCaptionsTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('kilamieaz_indogram_captions');
+        Schema::dropIfExists('kilamieaz_indogram_tags');
     }
 }

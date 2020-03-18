@@ -14,6 +14,7 @@ class CreatePostsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('description');
+            $table->string('slug');
             $table->integer('user_id')->unsigned();
             $table->timestamps();
         });
