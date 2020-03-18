@@ -50,10 +50,9 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
-
         return [
-            'Kilamieaz\Indogram\Components\MyComponent' => 'myComponent',
+            'Kilamieaz\Indogram\Components\IndexPosts' => 'indexPosts',
+            'Kilamieaz\Indogram\Components\CreatePosts' => 'createPosts',
         ];
     }
 
@@ -81,15 +80,28 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
-
         return [
             'indogram' => [
                 'label' => 'indogram',
-                'url' => Backend::url('kilamieaz/indogram/mycontroller'),
-                'icon' => 'icon-leaf',
+                'url' => Backend::url('kilamieaz/indogram/posts'),
+                'icon' => 'icon-camera-retro',
                 'permissions' => ['kilamieaz.indogram.*'],
                 'order' => 500,
+
+                'sideMenu' => [
+                    'posts' => [
+                        'label' => 'Posts',
+                        'icon' => 'icon-cloud-upload',
+                        'url' => Backend::url('kilamieaz/indogram/posts'),
+                        'permissions' => ['kilamieaz.indogram.*'],
+                    ],
+                    'tag' => [
+                        'label' => 'Tags',
+                        'icon' => 'icon-tags',
+                        'url' => Backend::url('kilamieaz/indogram/tags'),
+                        'permissions' => ['kilamieaz.indogram.*'],
+                    ]
+                ]
             ],
         ];
     }

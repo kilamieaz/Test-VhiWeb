@@ -1,0 +1,25 @@
+<form method="POST" data-request="onSubmit" data-request-files data-request-flash data-request-validate
+    data-request-success="this.reset(); alert('Post Uploaded')">
+
+    <input type="hidden" name="_handler" value="onSave">
+    {{ form_token() }}
+    {{ form_sessionKey() }}
+
+    <div class="form-group">
+        <label for="description">Post Description</label>
+        <input type="text" name="description" class="form-control">
+        <p data-validate-for="description" class="text-danger"></p>
+    </div>
+
+    <div class="form-group">
+        <label for="image">Post image</label>
+        <input type="file" name="image" class="form-control-file" accept="image/*" data-request="onImageUpload"
+            data-request-files data-request-flash>
+        <p data-validate-for="image" class="text-danger"></p>
+    </div>
+    <div class="form-group">
+        <div id="imageResult">No image to preview!</div>
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary" data-attach-loading>Upload</button>
+</form>
