@@ -1,20 +1,37 @@
 name: 'Main Menu'
 items:
     -
-        title: 'Home'
+        title: Home
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: home
+        cmsPage: ''
+        replace: ''
         viewBag:
             isExternal: '0'
             isHidden: '0'
             cssClass: ''
     -
-        title: 'Privacy Policy'
+        title: Upload
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
-        reference: static/privacy-policy
+        reference: create-posts
+        cmsPage: ''
+        replace: ''
         viewBag:
-            isExternal: '0'
             isHidden: '0'
             cssClass: ''
+            isExternal: '0'
+    -
+        title: About
+        type: cms-page
+        code: ''
+        reference: about
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

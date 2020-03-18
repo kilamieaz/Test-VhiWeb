@@ -1,0 +1,41 @@
+title = "Login"
+url = "/login"
+layout = "default"
+is_hidden = 0
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+
+[session]
+security = "all"
+==
+{% if not user %}
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-6 p-2">
+                <h3>Sign in</h3>
+                {% partial account ~ '::signin' %}
+            </div>
+    
+           <div class="col-md-6 p-2">
+              {% partial account ~ '::register' %}
+          </div>
+        </div>
+    </div>
+
+{% else %}
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-12 p-2">
+            {% partial account ~ '::activation_check' %}
+
+            {% partial account ~ '::update' %}
+
+            {% partial account ~ '::deactivate_link' %}
+        </div>
+    </div>
+</div>
+
+{% endif %}

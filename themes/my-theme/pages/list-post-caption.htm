@@ -1,13 +1,13 @@
-title = "Home"
-url = "/"
+title = "List Post By tags"
+url = "/posts/tag/:slug"
 layout = "default"
 is_hidden = 0
-
-[indexPosts]
 
 [session]
 security = "user"
 redirect = "login"
+
+[indexPosts]
 ==
 <div class="container">
     {% component 'indexPosts' %}

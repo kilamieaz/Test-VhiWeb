@@ -1,14 +1,14 @@
-title = "Home"
-url = "/"
+title = "Create Posts"
+url = "/posts/create"
 layout = "default"
 is_hidden = 0
 
-[indexPosts]
+[createPosts]
 
 [session]
 security = "user"
 redirect = "login"
 ==
 <div class="container">
-    {% component 'indexPosts' %}
+    {% component 'createPosts' %}
 </div>

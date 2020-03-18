@@ -1,0 +1,20 @@
+items:
+    -
+        title: Login
+        type: cms-page
+        code: ''
+        reference: login
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Daftar
+        type: cms-page
+        code: ''
+        reference: login
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Auth Menu'
