@@ -1,6 +1,6 @@
 <?php Block::put('breadcrumb') ?>
     <ul>
-        <li><a href="<?= Backend::url('kilamieaz/indogram/captions') ?>">Captions</a></li>
+        <li><a href="<?= Backend::url('kilamieaz/indogram/tags') ?>">Tags</a></li>
         <li><?= e($this->pageTitle) ?></li>
     </ul>
 <?php Block::endPut() ?>
@@ -19,7 +19,7 @@
                     type="submit"
                     data-request="onSave"
                     data-hotkey="ctrl+s, cmd+s"
-                    data-load-indicator="Creating Caption..."
+                    data-load-indicator="Creating Tag..."
                     class="btn btn-primary">
                     Create
                 </button>
@@ -28,12 +28,12 @@
                     data-request="onSave"
                     data-request-data="close:1"
                     data-hotkey="ctrl+enter, cmd+enter"
-                    data-load-indicator="Creating Caption..."
+                    data-load-indicator="Creating Tag..."
                     class="btn btn-default">
                     Create and Close
                 </button>
                 <span class="btn-text">
-                    or <a href="<?= Backend::url('kilamieaz/indogram/captions') ?>">Cancel</a>
+                    or <a href="<?= Backend::url('kilamieaz/indogram/tags') ?>">Cancel</a>
                 </span>
             </div>
         </div>
@@ -43,6 +43,6 @@
 <?php else: ?>
 
     <p class="flash-message static error"><?= e($this->fatalError) ?></p>
-    <p><a href="<?= Backend::url('kilamieaz/indogram/captions') ?>" class="btn btn-default">Return to captions list</a></p>
+    <p><a href="<?= Backend::url('kilamieaz/indogram/tags') ?>" class="btn btn-default">Return to tags list</a></p>
 
 <?php endif ?>

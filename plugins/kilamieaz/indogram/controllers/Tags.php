@@ -4,9 +4,9 @@ use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Captions Back-end Controller
+ * Tags Back-end Controller
  */
-class Captions extends Controller
+class Tags extends Controller
 {
     public $implement = [
         'Backend.Behaviors.FormController',
@@ -20,6 +20,6 @@ class Captions extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Kilamieaz.Indogram', 'indogram', 'captions');
+        BackendMenu::setContext('Kilamieaz.Indogram', 'indogram', 'tags');
     }
 }

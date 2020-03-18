@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Tag
+
+# Model Form Field configuration
+form: $/kilamieaz/indogram/models/tag/fields.yaml
+
+# Model Class name
+modelClass: Kilamieaz\Indogram\Models\Tag
+
+# Default redirect location
+defaultRedirect: kilamieaz/indogram/tags
+
+# Create page
+create:
+    title: Create Tag
+    redirect: kilamieaz/indogram/tags/update/:id
+    redirectClose: kilamieaz/indogram/tags
+
+# Update page
+update:
+    title: Edit Tag
+    redirect: kilamieaz/indogram/tags
+    redirectClose: kilamieaz/indogram/tags
+
+# Preview page
+preview:
+    title: Preview Tag
